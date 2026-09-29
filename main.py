@@ -67,9 +67,7 @@ async def try_page(request: Request):
     return templates.TemplateResponse(request=request, name="try.html", context={})
 
 
-@app.get("/about")
-async def about(request: Request):
-    return templates.TemplateResponse(request=request, name="about.html", context={})
+# About page removed from UI; keep route removed so navigation no longer references it.
 
 
 @app.get("/health")
