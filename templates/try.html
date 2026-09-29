@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}Try 7TO5{% endblock %}
+
+{% block content %}
+<main class="page-shell single-column">
+    <section class="panel playground-panel">
+        <div class="section-heading">
+            <span class="tag alt">Try</span>
+            <h2>Try 7TO5</h2>
+        </div>
+
+        <textarea id="codeEditor" spellcheck="false">let num A be 10
+let num B be 5
+let num result be add A and B
+print result
+
+if result eq 15 then {
+  print "result is 15"
+} else {
+  print "result is not 15"
+} end
+
+while A lt 15 do {
+  set A = add A and 1
+  print A
+} end
+
+func addOne(num x) {
+  return add x and 1
+} end
+
+print call addOne(10)</textarea>
+
+        <div class="toolbar">
+            <button id="runButton" type="button">Run code</button>
+            <button id="resetButton" type="button" class="secondary">Reset</button>
+        </div>
+
+        <div class="output-wrap">
+            <div class="output-header">Output</div>
+            <pre id="outputConsole">Ready.</pre>
+        </div>
+    </section>
+</main>
+{% endblock %}

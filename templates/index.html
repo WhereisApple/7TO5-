@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TO5</title>
+    <meta name="description" content="7TO5 learning platform and sandbox" />
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand-wrap">
+            <div class="brand-mark">7</div>
+            <div>
+                <p class="eyebrow">Intermediate Programming Language</p>
+                <h1>7TO5</h1>
+            </div>
+        </div>
+        <nav class="topnav" aria-label="Main navigation">
+            <a href="#learn">Learn</a>
+            <a href="#playground">Try</a>
+            <a href="#about">About Developer</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section id="learn" class="panel learn-panel">
+            <div class="section-heading">
+                <span class="tag">Syntax</span>
+                <h2>Learn 7TO5</h2>
+            </div>
+
+            <div class="intro-box">
+                <p>
+                    7TO5 is a compact intermediate programming language for learning structured logic,
+                    variables, arithmetic, conditionals, loops, and functions in one readable syntax.
+                </p>
+            </div>
+
+            <div class="syntax-grid">
+                <article class="card">
+                    <h3>Variables</h3>
+                    <pre>let num A be 10
+let str name be "Ava"
+let deci price be 19.99</pre>
+                </article>
+
+                <article class="card">
+                    <h3>Math</h3>
+                    <pre>let num total be add A and B
+let num diff be sub A and B
+let num result be mul total and 2</pre>
+                </article>
+
+                <article class="card">
+                    <h3>Logic</h3>
+                    <pre>if score gt 10 then {
+  print "Pass"
+} else {
+  print "Retry"
+} end</pre>
+                </article>
+
+                <article class="card">
+                    <h3>Loops</h3>
+                    <pre>while count lt 5 do {
+  print count
+  set count = add count and 1
+} end</pre>
+                </article>
+
+                <article class="card">
+                    <h3>Functions</h3>
+                    <pre>func addOne(num x) {
+  return add x and 1
+} end
+
+print call addOne(10)</pre>
+                </article>
+
+                <article class="card">
+                    <h3>Output</h3>
+                    <pre>print "Welcome to 7TO5"
+print total</pre>
+                </article>
+            </div>
+
+            <div class="reference-box">
+                <h3>Reference</h3>
+                <ul>
+                    <li><strong>let</strong> declares a variable</li>
+                    <li><strong>set</strong> updates an existing variable</li>
+                    <li><strong>print</strong> shows output</li>
+                    <li><strong>if ... then ... else ... end</strong> handles conditions</li>
+                    <li><strong>while ... do ... end</strong> loops code</li>
+                    <li><strong>func</strong> defines a function</li>
+                    <li><strong>return</strong> returns a value</li>
+                    <li><strong>call</strong> calls a function</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="playground" class="panel playground-panel">
+            <div class="section-heading">
+                <span class="tag alt">Try</span>
+                <h2>Try 7TO5</h2>
+            </div>
+
+            <textarea id="codeEditor" spellcheck="false">let num A be 10
+let num B be 5
+let num result be add A and B
+print result
+
+if result eq 15 then {
+  print "result is 15"
+} else {
+  print "result is not 15"
+} end
+
+while A lt 15 do {
+  set A = add A and 1
+  print A
+} end
+
+func addOne(num x) {
+  return add x and 1
+} end
+
+print call addOne(10)</textarea>
+
+            <div class="toolbar">
+                <button id="runButton" type="button">Run code</button>
+                <button id="resetButton" type="button" class="secondary">Reset</button>
+            </div>
+
+            <div class="output-wrap">
+                <div class="output-header">Output</div>
+                <pre id="outputConsole">Ready.</pre>
+            </div>
+        </section>
+
+        <section id="about" class="panel about-panel">
+            <div class="section-heading">
+                <span class="tag alt2">Developer</span>
+                <h2>About Developer</h2>
+            </div>
+
+            <div class="about-box">
+                <p>
+                    Built for learning, experimentation, and language design exploration. The 7TO5
+                    project focuses on a compact, readable syntax that helps beginners understand how
+                    programming languages work from tokens to expressions to runtime execution.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

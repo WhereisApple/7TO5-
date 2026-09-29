@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block title %}Learn 7TO5{% endblock %}
+
+{% block content %}
+<main class="page-shell single-column">
+    <section class="panel hero-panel">
+        <div class="section-heading">
+            <span class="tag">Syntax</span>
+            <h2>Learn 7TO5</h2>
+        </div>
+
+        <div class="intro-box">
+            <p>
+                7TO5 is a compact programming language designed to teach the essentials of variables,
+                arithmetic, logic, loops, and functions using readable syntax.
+            </p>
+        </div>
+
+        <div class="syntax-grid">
+            <article class="card">
+                <h3>Variables</h3>
+                <pre>let num A be 10
+let str name be "Ava"
+let deci price be 19.99</pre>
+            </article>
+
+            <article class="card">
+                <h3>Math</h3>
+                <pre>let num total be add A and B
+let num diff be sub A and B
+let num result be mul total and 2</pre>
+            </article>
+
+            <article class="card">
+                <h3>Logic</h3>
+                <pre>if score gt 10 then {
+  print "Pass"
+} else {
+  print "Retry"
+} end</pre>
+            </article>
+
+            <article class="card">
+                <h3>Loops</h3>
+                <pre>while count lt 5 do {
+  print count
+  set count = add count and 1
+} end</pre>
+            </article>
+
+            <article class="card">
+                <h3>Functions</h3>
+                <pre>func addOne(num x) {
+  return add x and 1
+} end
+
+print call addOne(10)</pre>
+            </article>
+
+            <article class="card">
+                <h3>Output</h3>
+                <pre>print "Welcome to 7TO5"
+print total</pre>
+            </article>
+        </div>
+
+        <div class="reference-box">
+            <h3>Reference</h3>
+            <ul>
+                <li><strong>let</strong> declares a variable</li>
+                <li><strong>set</strong> updates an existing variable</li>
+                <li><strong>print</strong> shows output</li>
+                <li><strong>if ... then ... else ... end</strong> handles conditions</li>
+                <li><strong>while ... do ... end</strong> loops code</li>
+                <li><strong>func</strong> defines a function</li>
+                <li><strong>return</strong> returns a value</li>
+                <li><strong>call</strong> calls a function</li>
+            </ul>
+        </div>
+    </section>
+</main>
+{% endblock %}

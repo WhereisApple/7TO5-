@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}7TO5{% endblock %}</title>
+    <meta name="description" content="7TO5 learning platform and sandbox" />
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand-wrap">
+            <div class="brand-mark">7</div>
+            <div>
+                <h1>7TO5</h1>
+            </div>
+        </div>
+        <nav class="topnav" aria-label="Main navigation">
+            <a href="/learn">Learn</a>
+            <a href="/try">Try</a>
+            <a href="/about">About Developer</a>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
