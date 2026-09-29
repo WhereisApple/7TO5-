@@ -50,14 +50,16 @@ I'm implementing these parts myself so I can understand what happens between wri
 A simple 7TO5 program can look like:
 
 ```text
-# Example syntax will evolve as the language develops
+let num A be 10
+let num B be 5
+let num result be add A and B
+print result
 
-let x = 10
-
-while x > 0 {
-    print x
-    x = x - 1
-}
+if result eq 15 then {
+  print "result is 15"
+} else {
+  print "result is not 15"
+} end
 ```
 
 The syntax is still experimental, so some parts of the language may change as development continues.
